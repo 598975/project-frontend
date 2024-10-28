@@ -21,6 +21,14 @@ export default defineConfig({
       "^/logout": {
         target: "https://localhost:7067",
         secure: false
+      },
+      "^/api/Polls": {
+        target: "https://localhost:7067",
+        secure: false
+      },
+      "^/api/Votes": {
+        target: "https://localhost:7067",
+        secure: false
       }
     }
   }

@@ -37,7 +37,13 @@
     <h1 class="text-center">Login</h1>
     <form on:submit|preventDefault={submitLogin} class="w3-panel">
         <label for="email">Email</label>
-        <input type="email" id="email" bind:value={email} class="w3-input" />
+        <input
+            type="email"
+            id="email"
+            bind:value={email}
+            class="w3-input"
+            required
+        />
         <label for="password">Password</label>
         <input
             type="password"
@@ -47,7 +53,7 @@
             required
         />
         <label for="remember">Remember me</label>
-        <input type="checkbox" id="remember" bind:checked={remember} required />
+        <input type="checkbox" id="remember" bind:checked={remember} />
         <br />
         <button type="submit" class="w3-button w3-blue">Login</button>
         <p>{error}</p>
