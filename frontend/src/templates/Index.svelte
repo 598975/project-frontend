@@ -2,7 +2,7 @@
     import { Link } from "svelte-routing";
     import Logout from "../lib/Logout.svelte";
     import Authorization from "../Authorization.svelte";
-    import Polls from "./Polls.svelte";
+    import Polls from "../lib/Polls.svelte";
 
     let question = "";
     let option_1 = "";
